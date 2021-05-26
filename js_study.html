@@ -3,15 +3,20 @@
 <head>
   <title>글자수세기</title>
   <meta charset="utf-8">
+
+  <script>
+    function cnt_text(){
+      var cnt_t = document.getElementById("textbox");
+      alert(cnt_t.value.length);
+    }
+
+  </script>
 </head>
 <body>
 
   <input type="text" size="10" id="textbox">
-  <script>
-  var cnt_text = document.getElementById("textbox");
-  </script>
-  <input type="button" value="글자수 세기" onclick="alert('안녕'.length)">
-<!--생활코딩 JS 2강 까지만 보고 글자수 세기 만들어 보려 했으나 제대로 안됨
-.length가 안되는 이유?-->
+
+  <input type="button" value="글자수 세기" onclick="cnt_text();">
+
 </body>
 </html>
